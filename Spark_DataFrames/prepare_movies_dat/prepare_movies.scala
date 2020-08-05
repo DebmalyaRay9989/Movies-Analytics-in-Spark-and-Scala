@@ -1,3 +1,5 @@
+
+
 // Clean data into DataFrame
 val movies=spark.read.textFile("../../Movielens/movies.dat")
 val m_id=movies.map(lines=>lines.split("::")(0)).toDF("MovieID")
